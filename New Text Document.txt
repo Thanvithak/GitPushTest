@@ -1,0 +1,153 @@
+#############################################################
+################ RapidDataVault TopDown Log ################
+#############################################################
+Start Time = Wed Oct 18 20:23:55 IST 2023
+DIS Version = 12.0.1
+Back End DataBase = SQLSERVER
+
+#############################################################
+################ RapidDataVault TopDown Log ################
+#############################################################
+Start Time = Wed Oct 18 20:23:55 IST 2023
+DIS Version = 12.0.1
+Back End DataBase = SQLSERVER
+Input Parameter :: Mapping Version Flag = false
+Input Parameter :: Environment Version Flag = false
+Input Parameter :: MetaData Flag = true
+Input Parameter :: Project Name = Test
+Input Parameter :: Source Identifier = 01_source_
+Input Parameter :: Mapping Creation Flag = true
+Input Parameter :: DataSource Type = Logical
+Input Parameter :: System Name = Test
+Input Parameter :: Environment Name = EDW
+Input Parameter :: Target Database = EDW
+Input Parameter :: Stage System Name = Test
+Input Parameter :: Stage Environment Name = EDW_STG
+Input Parameter :: Target Schema Name = baseline_vault
+Input Parameter :: Stage Schema Name = baseline_stage
+Input Parameter :: Generate Stage = true
+Input Parameter :: Stage Table Prefix = stg_
+Input Parameter :: Stage Table Suffix = _stg
+Input Parameter :: Hub Table Prefix = rv_
+Input Parameter :: Hub Table Suffix = _h
+Input Parameter :: Link Table Prefix = rv_
+Input Parameter :: Link Table Suffix = _l
+Input Parameter :: Satellite Table Prefix = rv_
+Input Parameter :: Satellite Table Suffix = _hsat
+Input Parameter :: Effective Table Suffix = _effsat
+Input Parameter :: MAS Table Suffix = _masat
+Input Parameter :: Link Satellite Table Suffix = _lsat
+Input Parameter :: Reference Satellite Table Prefix = ref
+Input Parameter :: Reference Hub Table Suffix = _rhub
+Input Parameter :: Reference Link Table Suffix = _rlnk
+Input Parameter :: Reference Satellite Table Suffix = _rsat
+Input Parameter :: Reference Link Satellite Table Suffix = _rlsat
+Input Parameter :: Reference Satellite Table Name Prefix = rsat_Prefix_
+Input Parameter :: Reference Link Satellite Table Name Prefix = rlsat_Prefix_
+Input Parameter :: Link Satellite Table Prefix = lsat_Prefix_
+Input Parameter :: Effectivity Satellite Table Prefix = effsat_Prefix_
+Input Parameter :: Multi Active Satellite Table Prefix = masat_Prefix_
+Input Parameter :: Stage Include BWSC = false
+Input Parameter :: Include BKey = true
+Input Parameter :: Include FKey = false
+Input Parameter :: BKCC BusinessRule = 
+Input Parameter :: MLTID BusinessRule = 
+Input Parameter :: BWSC BusinessRule = 
+Input Parameter :: LEDTS = 
+Input Parameter :: LEDTS Datatype = 
+Input Parameter :: LEDTS BRule = 
+Input Parameter :: Userdefied1 Name = 
+Input Parameter :: Userdefied1 Datatype = 
+Input Parameter :: Userdefied1 BRule = 
+Input Parameter :: Userdefied1 Column Class = USER 
+Input Parameter :: Userdefied2 Name = 
+Input Parameter :: Userdefied2 Datatype = 
+Input Parameter :: Userdefied2 BRule = 
+Input Parameter :: Userdefied2 Column Class = USER
+Input Parameter :: Userdefied3 Name = 
+Input Parameter :: Userdefied3 Datatype = 
+Input Parameter :: Userdefied3 BRule = 
+Input Parameter :: Userdefied3 Column Class = USER
+Input Parameter :: Userdefied4 Name = 
+Input Parameter :: Userdefied4 Datatype = 
+Input Parameter :: Userdefied4 BRule = 
+Input Parameter :: Userdefied4 Column Class = USER
+Input Parameter :: Userdefied5 Name = 
+Input Parameter :: Userdefied5 Datatype = 
+Input Parameter :: Userdefied5 BRule = 
+Input Parameter :: Userdefied5 Column Class = USER
+
+::::::::::::::::::DataVault Property File::::::::::::::::::::::
+
+
+linkMapPrefix = STTM3_
+HDiffSuffix = 
+LDTSRule = CURRENT_TIMESTAMP
+HkSuffix = 
+HDIFFType = MD5
+HDiffPrefix = HDIFF_
+HdiffExcludes = 
+refMapPrefix = STTM5_
+MLTID = 
+password = password
+tKeyDatatype = VARCHAR
+RSRC = REC_SRC
+SQNName = 
+sqlServerDriver = com.microsoft.sqlserver.jdbc.SQLServerDriver
+BWSCColumnClass = BWSC
+HkPrefix = HK_H_
+satMapPrefix = STTM4_
+RSRCEnvRule = false
+linkHkName = HK_LNK
+LDTSDatatype = TIMESTAMP_NTZ(9)
+MLTIDLength = 20
+sqlServerIp = localhost
+LDTSName = LOAD_TS
+RSRCTableRule = true
+RSRCDataType = VARCHAR
+BKCCLength = 10
+BWSCDataType = INT
+MLTIDBusRule = 
+RSRCLength = 20
+BKCCBusRule = 
+tKeyBusRule = COALESCE(CAST(% AS VARCHAR),'')
+MLTIDColumnClass = USER
+HKEYType = MD5
+VariableName = VariableValue
+HDiffDataType = VARCHAR
+dkeyNameSuffix = _DK
+isTBKey = false
+LDTSSatPKey = true
+RSRCSysRule = false
+RSRCSchemaRule = false
+tKeyName = 
+stageMapPrefix = STTM1_
+MLTIDDataType = VARCHAR
+SQNBusRule = 
+BKCCDataType = VARCHAR
+LEDTS = LOAD_EDTS
+HkLength = 32
+userName = username
+url = jdbc:sqlserver://localhost:1433;databaseName=
+sqlServerPort = 1433
+hubMapPrefix = STTM2_
+LEDTSDatatype = DATETIME
+BKCC = 
+BKCCColumnClass = BKCC
+HkDataType = VARCHAR
+BWSC = 
+SQNDatatype = NUMERIC
+BWSCBusRule = 
+HDiffLength = 32
+
+
+================================================================
+
+
+Subject created successfully : 01_source__BOOK
+Mapping created successfully : STTM1_01_source__SRC_BOOK_TO_baseline_stage_stg_01_source__BOOK_stg
+Mapping saved successfully
+EnvironmentId and TableId are Mandatory  : baseline_stage.stg_01_source__BOOK_stg
+End Time = Wed Oct 18 20:23:56 IST 2023
+Total Execution Time = 1133 ms
+
